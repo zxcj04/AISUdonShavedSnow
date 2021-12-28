@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
+//  CoreDataView.swift
 //  AISUdonShavedSnow
 //
 //  Created by FanRende on 2021/12/25.
 //
 
 import SwiftUI
-import CoreData
 
-struct ContentView: View {
+//  CoreDataView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
+struct CoreDataView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -81,8 +81,8 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct ContentView_Previews: PreviewProvider {
+struct CoreDataView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        CoreDataView()
     }
 }

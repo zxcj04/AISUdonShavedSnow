@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WMSKit",
+        "repositoryURL": "https://github.com/zxcj04/WMSKit",
+        "state": {
+          "branch": "main",
+          "revision": "db2154cbb0157b16cac6984ac01d94aa47aae7a3",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

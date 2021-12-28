@@ -13,16 +13,29 @@
 		0360B07827775A0A0080A6CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0360B07727775A0A0080A6CC /* Preview Assets.xcassets */; };
 		0360B07A27775A0A0080A6CC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B07927775A0A0080A6CC /* Persistence.swift */; };
 		0360B07D27775A0A0080A6CC /* AISUdonShavedSnow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0360B07B27775A0A0080A6CC /* AISUdonShavedSnow.xcdatamodeld */; };
+		0360B08427775CA30080A6CC /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B08327775CA30080A6CC /* CoreDataView.swift */; };
+		0360B08C277771D50080A6CC /* WMSKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0360B08B277771D50080A6CC /* WMSKit */; };
+		0360B08E277777640080A6CC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B08D277777640080A6CC /* MapView.swift */; };
+		0360B0982777CD970080A6CC /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B0972777CD970080A6CC /* DateRange.swift */; };
+		0360B09A2777CE710080A6CC /* WMSLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B0992777CE710080A6CC /* WMSLayer.swift */; };
+		0360B09C2777CF230080A6CC /* DateRangeModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B09B2777CF230080A6CC /* DateRangeModelView.swift */; };
+		0360B09E2777D53A0080A6CC /* WMSLayerModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B09D2777D53A0080A6CC /* WMSLayerModelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0360B06D27775A080080A6CC /* AISUdonShavedSnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AISUdonShavedSnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0360B06D27775A080080A6CC /* AIS烏冬雪花冰.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AIS烏冬雪花冰.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0360B07027775A080080A6CC /* AISUdonShavedSnowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISUdonShavedSnowApp.swift; sourceTree = "<group>"; };
-		0360B07227775A080080A6CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0360B07227775A080080A6CC /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		0360B07427775A0A0080A6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0360B07727775A0A0080A6CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0360B07927775A0A0080A6CC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0360B07C27775A0A0080A6CC /* AISUdonShavedSnow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AISUdonShavedSnow.xcdatamodel; sourceTree = "<group>"; };
+		0360B08327775CA30080A6CC /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
+		0360B08D277777640080A6CC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0360B0972777CD970080A6CC /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
+		0360B0992777CE710080A6CC /* WMSLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMSLayer.swift; sourceTree = "<group>"; };
+		0360B09B2777CF230080A6CC /* DateRangeModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangeModelView.swift; sourceTree = "<group>"; };
+		0360B09D2777D53A0080A6CC /* WMSLayerModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMSLayerModelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0360B08C277771D50080A6CC /* WMSKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +61,7 @@
 		0360B06E27775A080080A6CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0360B06D27775A080080A6CC /* AISUdonShavedSnow.app */,
+				0360B06D27775A080080A6CC /* AIS烏冬雪花冰.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +69,12 @@
 		0360B06F27775A080080A6CC /* AISUdonShavedSnow */ = {
 			isa = PBXGroup;
 			children = (
+				0360B088277767B60080A6CC /* lib */,
+				0360B0872777664C0080A6CC /* Views */,
+				0360B086277766450080A6CC /* ViewModels */,
+				0360B0852777662A0080A6CC /* Models */,
 				0360B07027775A080080A6CC /* AISUdonShavedSnowApp.swift */,
-				0360B07227775A080080A6CC /* ContentView.swift */,
 				0360B07427775A0A0080A6CC /* Assets.xcassets */,
-				0360B07927775A0A0080A6CC /* Persistence.swift */,
 				0360B07B27775A0A0080A6CC /* AISUdonShavedSnow.xcdatamodeld */,
 				0360B07627775A0A0080A6CC /* Preview Content */,
 			);
@@ -71,6 +87,42 @@
 				0360B07727775A0A0080A6CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0360B0852777662A0080A6CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0360B0972777CD970080A6CC /* DateRange.swift */,
+				0360B0992777CE710080A6CC /* WMSLayer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0360B086277766450080A6CC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0360B09B2777CF230080A6CC /* DateRangeModelView.swift */,
+				0360B09D2777D53A0080A6CC /* WMSLayerModelView.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0360B0872777664C0080A6CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0360B07227775A080080A6CC /* ContentView.swift */,
+				0360B08327775CA30080A6CC /* CoreDataView.swift */,
+				0360B08D277777640080A6CC /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0360B088277767B60080A6CC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0360B07927775A0A0080A6CC /* Persistence.swift */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,8 +141,11 @@
 			dependencies = (
 			);
 			name = AISUdonShavedSnow;
+			packageProductDependencies = (
+				0360B08B277771D50080A6CC /* WMSKit */,
+			);
 			productName = AISUdonShavedSnow;
-			productReference = 0360B06D27775A080080A6CC /* AISUdonShavedSnow.app */;
+			productReference = 0360B06D27775A080080A6CC /* AIS烏冬雪花冰.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,6 +172,9 @@
 				Base,
 			);
 			mainGroup = 0360B06427775A080080A6CC;
+			packageReferences = (
+				0360B08A277771D50080A6CC /* XCRemoteSwiftPackageReference "WMSKit" */,
+			);
 			productRefGroup = 0360B06E27775A080080A6CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,10 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0360B09C2777CF230080A6CC /* DateRangeModelView.swift in Sources */,
 				0360B07A27775A0A0080A6CC /* Persistence.swift in Sources */,
+				0360B0982777CD970080A6CC /* DateRange.swift in Sources */,
+				0360B08E277777640080A6CC /* MapView.swift in Sources */,
 				0360B07327775A080080A6CC /* ContentView.swift in Sources */,
 				0360B07127775A080080A6CC /* AISUdonShavedSnowApp.swift in Sources */,
+				0360B09E2777D53A0080A6CC /* WMSLayerModelView.swift in Sources */,
+				0360B09A2777CE710080A6CC /* WMSLayer.swift in Sources */,
 				0360B07D27775A0A0080A6CC /* AISUdonShavedSnow.xcdatamodeld in Sources */,
+				0360B08427775CA30080A6CC /* CoreDataView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +355,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanrende.AISUdonShavedSnow;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "AIS烏冬雪花冰";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +384,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanrende.AISUdonShavedSnow;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "AIS烏冬雪花冰";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,6 +413,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0360B08A277771D50080A6CC /* XCRemoteSwiftPackageReference "WMSKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zxcj04/WMSKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0360B08B277771D50080A6CC /* WMSKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0360B08A277771D50080A6CC /* XCRemoteSwiftPackageReference "WMSKit" */;
+			productName = WMSKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0360B07B27775A0A0080A6CC /* AISUdonShavedSnow.xcdatamodeld */ = {
