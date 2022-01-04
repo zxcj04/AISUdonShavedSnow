@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03349FD3277C395E003DE885 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349FD2277C395E003DE885 /* WidgetKit.framework */; };
+		03349FD5277C395E003DE885 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03349FD4277C395E003DE885 /* SwiftUI.framework */; };
+		03349FD8277C395E003DE885 /* UdonWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03349FD7277C395E003DE885 /* UdonWidget.swift */; };
+		03349FDA277C3960003DE885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03349FD9277C3960003DE885 /* Assets.xcassets */; };
+		03349FDE277C3960003DE885 /* UdonWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 03349FD0277C395E003DE885 /* UdonWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0360B07127775A080080A6CC /* AISUdonShavedSnowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B07027775A080080A6CC /* AISUdonShavedSnowApp.swift */; };
 		0360B07327775A080080A6CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B07227775A080080A6CC /* ContentView.swift */; };
 		0360B07527775A0A0080A6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0360B07427775A0A0080A6CC /* Assets.xcassets */; };
@@ -22,7 +27,37 @@
 		0360B09E2777D53A0080A6CC /* WMSLayerModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360B09D2777D53A0080A6CC /* WMSLayerModelView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		03349FDC277C3960003DE885 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0360B06527775A080080A6CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03349FCF277C395E003DE885;
+			remoteInfo = UdonWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03349FDF277C3960003DE885 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				03349FDE277C3960003DE885 /* UdonWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		03349FD0277C395E003DE885 /* UdonWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UdonWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		03349FD2277C395E003DE885 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		03349FD4277C395E003DE885 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		03349FD7277C395E003DE885 /* UdonWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdonWidget.swift; sourceTree = "<group>"; };
+		03349FD9277C3960003DE885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03349FDB277C3960003DE885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0360B06D27775A080080A6CC /* AIS烏冬雪花冰.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AIS烏冬雪花冰.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0360B07027775A080080A6CC /* AISUdonShavedSnowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISUdonShavedSnowApp.swift; sourceTree = "<group>"; };
 		0360B07227775A080080A6CC /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 4; };
@@ -39,6 +74,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03349FCD277C395E003DE885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03349FD5277C395E003DE885 /* SwiftUI.framework in Frameworks */,
+				03349FD3277C395E003DE885 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0360B06A27775A080080A6CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +94,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03349FD1277C395E003DE885 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03349FD2277C395E003DE885 /* WidgetKit.framework */,
+				03349FD4277C395E003DE885 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03349FD6277C395E003DE885 /* UdonWidget */ = {
+			isa = PBXGroup;
+			children = (
+				03349FD7277C395E003DE885 /* UdonWidget.swift */,
+				03349FD9277C3960003DE885 /* Assets.xcassets */,
+				03349FDB277C3960003DE885 /* Info.plist */,
+			);
+			path = UdonWidget;
+			sourceTree = "<group>";
+		};
 		0360B06427775A080080A6CC = {
 			isa = PBXGroup;
 			children = (
 				0360B06F27775A080080A6CC /* AISUdonShavedSnow */,
+				03349FD6277C395E003DE885 /* UdonWidget */,
+				03349FD1277C395E003DE885 /* Frameworks */,
 				0360B06E27775A080080A6CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				0360B06D27775A080080A6CC /* AIS烏冬雪花冰.app */,
+				03349FD0277C395E003DE885 /* UdonWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +194,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		03349FCF277C395E003DE885 /* UdonWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03349FE2277C3960003DE885 /* Build configuration list for PBXNativeTarget "UdonWidgetExtension" */;
+			buildPhases = (
+				03349FCC277C395E003DE885 /* Sources */,
+				03349FCD277C395E003DE885 /* Frameworks */,
+				03349FCE277C395E003DE885 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UdonWidgetExtension;
+			productName = UdonWidgetExtension;
+			productReference = 03349FD0277C395E003DE885 /* UdonWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0360B06C27775A080080A6CC /* AISUdonShavedSnow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0360B08027775A0A0080A6CC /* Build configuration list for PBXNativeTarget "AISUdonShavedSnow" */;
@@ -135,10 +218,12 @@
 				0360B06927775A080080A6CC /* Sources */,
 				0360B06A27775A080080A6CC /* Frameworks */,
 				0360B06B27775A080080A6CC /* Resources */,
+				03349FDF277C3960003DE885 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				03349FDD277C3960003DE885 /* PBXTargetDependency */,
 			);
 			name = AISUdonShavedSnow;
 			packageProductDependencies = (
@@ -158,6 +243,9 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					03349FCF277C395E003DE885 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					0360B06C27775A080080A6CC = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -180,11 +268,20 @@
 			projectRoot = "";
 			targets = (
 				0360B06C27775A080080A6CC /* AISUdonShavedSnow */,
+				03349FCF277C395E003DE885 /* UdonWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		03349FCE277C395E003DE885 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03349FDA277C3960003DE885 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0360B06B27775A080080A6CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +294,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		03349FCC277C395E003DE885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03349FD8277C395E003DE885 /* UdonWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0360B06927775A080080A6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,7 +321,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		03349FDD277C3960003DE885 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03349FCF277C395E003DE885 /* UdonWidgetExtension */;
+			targetProxy = 03349FDC277C3960003DE885 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		03349FE0277C3960003DE885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QSYFFJ3YV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UdonWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UdonWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanrende.AISUdonShavedSnow.UdonWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03349FE1277C3960003DE885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QSYFFJ3YV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UdonWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UdonWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fanrende.AISUdonShavedSnow.UdonWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		0360B07E27775A0A0080A6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -336,6 +503,7 @@
 		0360B08127775A0A0080A6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +533,7 @@
 		0360B08227775A0A0080A6CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +563,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		03349FE2277C3960003DE885 /* Build configuration list for PBXNativeTarget "UdonWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03349FE0277C3960003DE885 /* Debug */,
+				03349FE1277C3960003DE885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0360B06827775A080080A6CC /* Build configuration list for PBXProject "AISUdonShavedSnow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

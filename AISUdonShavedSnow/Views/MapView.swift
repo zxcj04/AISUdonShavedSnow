@@ -23,25 +23,24 @@ struct MapView: View {
                     showLegend.toggle()
                 }
             
-            ZStack(alignment: .bottomLeading) {
+            ZStack {
                 Color.gray
-                    .frame(height: 100)
-                    .ignoresSafeArea()
-                    .opacity(0.8)
+                    .frame(width: 110, height: 32)
+                    .cornerRadius(20)
+                    .padding()
+                    .shadow(radius: 5)
                 
                 HStack {
                     Button {
                         presentationMode.wrappedValue.dismiss()
                     } label: {
                         Label("Back", systemImage: "arrowtriangle.backward.circle.fill")
-                            .font(.title2)
+                            .font(.title3)
                     }
                     .padding()
-                    
-                    Spacer()
                 }
             }
-            .offset(y: -(UIScreen.main.bounds.height - 100) / 2)
+            .offset(x: -(UIScreen.main.bounds.width - 140) / 2, y: -(UIScreen.main.bounds.height - 125) / 2)
             .offset(y: showLegend ? 0: -250)
             .animation(.easeInOut, value: showLegend)
 
@@ -74,16 +73,6 @@ struct MapView: View {
     }
 }
 
-public class WMSTileOverlayRenderer: MKTileOverlayRenderer {
-    public override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {
-        super.draw(mapRect, zoomScale: zoomScale, in: context)
-    }
-    
-    public override func canDraw(_ mapRect: MKMapRect, zoomScale: MKZoomScale) -> Bool {
-        return super.canDraw(mapRect, zoomScale: zoomScale)
-    }
-}
-
 struct InnerMapView: UIViewRepresentable {
     var url: String
     
@@ -91,9 +80,9 @@ struct InnerMapView: UIViewRepresentable {
         
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             if overlay is MKTileOverlay {
-                return WMSTileOverlayRenderer(overlay: overlay)
+                return MKTileOverlayRenderer(overlay: overlay)
             } else {
-                return WMSTileOverlayRenderer()
+                return MKTileOverlayRenderer()
             }
         }
     }
